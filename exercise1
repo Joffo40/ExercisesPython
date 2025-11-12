@@ -1,0 +1,7 @@
+nom = "Dupont"
+
+age = 30
+
+print(f"Bonjour, je m'appelle {nom} et j'ai {age} ans.")
+age = 50
+print(f"Bonjour, je m'appelle {nom} et j'ai {age} ans.")
