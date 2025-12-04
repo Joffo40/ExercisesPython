@@ -25,5 +25,13 @@ with open("index.html", 'r') as file:
 
     produits= {listeProduits[0]:listePrix[0],listeProduits[1]:listePrix[1],listeProduits[2]:listePrix[2]}
     #test= listeProduits.split("<h2>")
-    print(listeProduits[0].string)
-    print((listePrix[0]).string.split('Prix:','€'))
+    #print(listeProduits[0].string)
+    #print((listePrix)split)
+    
+    for num in range(3):
+        print(listeProduits[num].string)
+        affichage=(produits[listeProduits[num]].string.replace('Prix:',''))
+        affichage=affichage.replace('€','')
+        print(f'Prix {affichage} Euros')
+        valeur=str(float(affichage)*1.2)
+        print(f'Prix {valeur} Dollars')
