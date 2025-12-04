@@ -32,6 +32,6 @@ with open("index.html", 'r') as file:
         print(listeProduits[num].string)
         affichage=(produits[listeProduits[num]].string.replace('Prix:',''))
         affichage=affichage.replace('€','')
-        print(f'Prix {affichage} Euros')
+        print(f'Prix {affichage} €')
         valeur=str(float(affichage)*1.2)
-        print(f'Prix {valeur} Dollars')
+        print(f'Prix {valeur} $')
