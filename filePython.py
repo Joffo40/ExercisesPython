@@ -1,13 +1,14 @@
 import requests
 
 from bs4 import BeautifulSoup
-
-url = "https://quiz-partie3.oc"
-
-response = requests.get(url)
-
-html = response.content
+from bs4 import BeautifulSoup
 
 
-print(html)
-soup = BeautifulSoup(html, "html.parser")
+#url = "https://quiz-partie3.oc"
+
+response = requests.get("https://quiz-partie3.oc")
+
+#html = response.content
+
+#soup = BeautifulSoup(url, "html.parser")
+#soup.title.string
