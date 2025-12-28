@@ -47,5 +47,11 @@ class FilePost(Post):
         self.file=file
 
 class Thread:
-    def __init__(self, title):
+    def __init__(self, title, time_posted, posts):
         self.title=title
+        self.time_posted=time_posted
+        self.posts=posts
+    def display(self):
+        pass
+    def add_post(self, post):
+        pass
